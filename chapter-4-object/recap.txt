@@ -1,0 +1,9 @@
+Objects are collections of properties (key-value pairs) and methods (functions). Properties can be accessed using dot notation (obj.prop) or bracket notation (obj["prop"]). Objects are mutable by default, meaning their properties can be added, removed, or changed, even if the object is declared with const. However, the const keyword prevents reassigning the object reference.
+
+We can delete a property using the delete operator (delete obj["prop"]). For serialization and deserialization, JavaScript provides JSON.stringify (to convert an object into a JSON string) and JSON.parse (to convert a JSON string back into an object).
+
+The Object.keys(obj) method returns an array of the object’s enumerable property names. Other useful methods include Object.values(obj) and Object.entries(obj).
+
+Arrays are also a type of object, but they are indexed collections with additional methods like .push, .pop, and .map. We can loop through objects using for...in, Object.keys, or similar methods.
+
+JavaScript also supports modern syntax like destructuring, spread/rest operators, and shorthand for properties and methods, which make working with objects and arrays more concise and expressive.
