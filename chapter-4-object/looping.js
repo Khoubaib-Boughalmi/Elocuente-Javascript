@@ -4,10 +4,15 @@ const map = new Map([
   ["b", 2],
 ]);
 const str = "hello";
-const arr = [10, 20, 30];
+const arr = [0, 10, 20, 30];
 
 for (let index in obj) {
   console.log(`index: ${index} value: ${obj[index]}`);
+}
+
+
+for (let index of arr.keys()) {
+  console.log(`key: ${index}`);
 }
 
 Object.keys(obj).forEach((key) => console.log(`[keys] key: ${key}`));
