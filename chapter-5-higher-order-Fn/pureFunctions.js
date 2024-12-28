@@ -52,4 +52,4 @@ const reduce = (arr, cb, initialVal) => {
 
 
 let totalAgesManual = reduce(users, (acc, user) => acc + user.age , 0) 
-console.log(totalAgesManual/users.length);
+console.log(totalAgesManual / users.length);
