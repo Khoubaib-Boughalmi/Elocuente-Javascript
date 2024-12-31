@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Open Console to see the debounce in action</h2>
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <div style="display: flex; justify-content: center; flex-direction: column; width: 350px; height: 350px; gap: 25px;">
+        <div
+          class="input-container"
+          style="display: flex; flex-direction: column"
+        >
+          <label for="input-search1">With Debounce</label>
+          <input type="text" id="input-search1" style="padding: 10px" />
+        </div>
+        <div
+          class="input-container"
+          style="display: flex; flex-direction: column"
+        >
+          <label for="input-search1">Without Debounce</label>
+          <input type="text" id="input-search2" style="padding: 10px" />
+        </div>
+      </div>
+    </div>
+    <script src="./debounce.js"></script>
+  </body>
+</html>

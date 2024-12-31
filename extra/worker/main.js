@@ -15,7 +15,8 @@ window.addEventListener("load", () => {
   calculationButton.addEventListener("click", () => {
     worker.postMessage("message from main"); // send message to start the job
   });
-  worker.onmessage = function (response) { // recieve message with result
-    alert("Sum is: " + response.data);
-  };
+  worker.addEventListener("message", (event) => {
+    console.log(event.data)
+    alert("Sum is: " + event.data.sum);
+  });
 });
