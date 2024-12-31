@@ -1,3 +1,4 @@
+document.body.style.userSelect = "none";
 window.addEventListener("click", () => {
   // console.log("window clicked");
 });
