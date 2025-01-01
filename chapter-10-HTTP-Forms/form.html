@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="GET" action="form.html">
+      <p>Name: <input type="text" name="name" /></p>
+      <p>Password: <input type="password" name="password" /></p>
+      <p>Message:<br /><textarea name="message"></textarea></p>
+      <p><button type="submit">Send</button></p>
+    </form>
+
+    <select multiple>
+      <option value="1" >0001</option>
+      <option value="2">0010</option>
+      <option value="4">0100</option>
+      <option value="8">1000</option>
+    </select>
+    = <span id="output">0</span>
+    <script src="./form.js"></script>
+  </body>
+</html>
