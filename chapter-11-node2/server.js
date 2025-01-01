@@ -2,7 +2,7 @@ const { stat, readdir, unlink } = require("fs/promises");
 const { createServer } = require("http");
 const { resolve, sep } = require("path");
 const { lookup } = require("mime-types");
-const { createReadStream, rmdir } = require("fs");
+const { createReadStream, rmdir, createWriteStream } = require("fs");
 
 const methods = Object.create(null);
 
@@ -76,6 +76,21 @@ methods.DELETE = async function (request) {
       };
     }
   }
+};
+
+const pipeStream = async(from, to) => {
+  return new Promise ((resolve, reject) => {
+    from.on("error", reject);
+    to.on("error", reject);
+    to.on("finish", resolve);
+    from.pipe(to);
+  })
+}
+
+methods.PUT = async function (request) {
+  let path = urlPath(request.url);
+  await pipeStream(request, createWriteStream(path));
+  return { status: 204 };
 };
 
 server.listen(8000, () => {
