@@ -22,8 +22,7 @@ let server = createServer((request, response) => {
     console.error("Request error:", err);
     response.statusCode = 400;
     response.end("Bad request");
-  })
-  
+  })  
   
 });
 
