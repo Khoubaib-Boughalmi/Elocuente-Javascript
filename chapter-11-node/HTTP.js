@@ -1,6 +1,7 @@
 const { createServer } = require("http");
 
 let server = createServer((request, response) => {
+  // response is writableStream, request is readableStream that's why we have access to these events
   response.writeHead(200, { "content-type": "text/plain" });
   request.on("data", (chunk) => {
     if (!response.write(chunk.toString())) {
