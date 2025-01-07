@@ -1,0 +1,7 @@
+var and let are both used to declare variables in JavaScript. var is the older, pre-ES6 way of declaring variables, while let was introduced in ES6 (2015) and is now the recommended approach.
+
+    Hoisting: Both var and let are hoisted to the top of their scope. However, while a var-declared variable is initialized with undefined when hoisted (so it can be accessed before the declaration, albeit with an undefined value), a let-declared variable is hoisted but remains in a "temporal dead zone" until the declaration is encountered. Accessing a let variable before it is declared throws a ReferenceError.
+
+    Redeclaration: var allows redeclaration within the same scope, which can lead to unexpected overwriting of variables. In contrast, let prevents redeclaration within the same scope, throwing a SyntaxError if attempted.
+
+    Scope: var is function-scoped, meaning it is available throughout the entire function, regardless of where it is declared. This can lead to problems, especially within loops or conditionals. On the other hand, let is block-scoped, meaning it is confined to the block (like inside loops, conditionals, or functions) where it is declared.
