@@ -1,0 +1,18 @@
+Functional Programming (FP) is a programming paradigm—a way to write code that focuses on what to do rather than how to do it. It comes with a set of best practices designed to improve readability, maintainability, and scalability. The key concepts include:
+
+    Pure Functions:
+        FP relies heavily on pure functions because predictability is a cornerstone of the paradigm.
+        A pure function:
+            Always produces the same output for the same input.
+            Does not rely on or modify any external variables outside its scope (e.g., global variables or standard input).
+        This ensures there are no unintended side effects, making the code easier to debug and reason about.
+
+    Immutability:
+        In FP, data is immutable—it cannot be modified once created.
+        If a state update is required, a new instance of the data structure is created instead of mutating the existing one.
+        This eliminates bugs caused by unexpected changes to shared data and ensures thread-safety.
+
+    Higher-Order Functions:
+        FP utilizes higher-order functions to promote declarative over imperative programming.
+        These functions either take other functions as arguments or return functions as their result.
+        This allows FP to focus on what to do rather than how to do it, abstracting away implementation details and encouraging code reuse.
