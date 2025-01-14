@@ -1,0 +1,15 @@
+First-class functions are the language's ability to allow functions to be treated as any other variable. For example, Python allows us to pass functions as arguments, assign a reference to a function to a variable, and return a function as a return value. On the other hand, higher-order functions are functions that either take a function(s) as their argument or return one as a return value. However, in order to have higher-order functions in our codebase, the language itself must support first-class functions to enable this behavior.
+
+1. **First-Class Functions**:
+   - A **language feature**.
+   - Functions are treated like any other variable (can be passed, assigned, or returned).
+   - Python, JavaScript, and many other modern languages support this.
+
+2. **Higher-Order Functions**:
+   - A **specific type of function** that:
+     - Takes one or more functions as arguments.
+     - Returns a function as its result.
+   - Higher-order functions rely on the **first-class function feature** of the language to work.
+
+3. **Dependency**:
+   - A language **must** support first-class functions to enable writing higher-order functions.
